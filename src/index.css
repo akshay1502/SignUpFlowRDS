@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-size: 1.2rem;
 }
-
+body{
+  padding: 2rem;
+}
 .inputfields{
   display:flex;
   flex-direction: column;
