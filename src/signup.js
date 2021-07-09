@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Signup = () => {
     const [ msg, setMsg] = useState('');
+    const [ passwordmsg, setPasswordmsg] = useState('');
     const emailRegex = /\S+@\S+\.\S+/;
     const validateEmail = () => {
         const email = document.getElementById('email');
@@ -13,6 +14,21 @@ const Signup = () => {
             setMsg('Please enter a valid email!');
         }
     };
+
+    const passwordcheck = () => {
+        const password = document.getElementById('password').value;
+        const repassword = document.getElementById('repassword').value;
+        const passmsg = document.getElementById('passmsg');
+        if(password === repassword){
+            setPasswordmsg('Passwords Matched');
+            passmsg.style.color = 'green';
+        }
+        else{
+            setPasswordmsg('Passwords not matching');
+            passmsg.style.color = 'red'
+        }
+        console.log(password, repassword);
+    }
     return ( 
         <div>
             <form>
@@ -22,14 +38,14 @@ const Signup = () => {
                     <p style={{color:"red"}}>{msg}</p>
                 </div>
                 <div className="inputfields">
-                    <label>Password</label>
-                    <input type="password" required/>
+                    <label htmlFor="password">Password</label>
+                    <input type="password" id="password" name="password" required/>
                     <p>password strength</p>
                 </div>
                 <div className="inputfields">
-                    <label>Re-enter Password</label>
-                    <input type="password" required/>
-                    <p>success or error message</p>
+                    <label htmlFor="repassword">Re-enter Password</label>
+                    <input type="password" id="repassword" name="repassword" required onChange={passwordcheck}/>
+                    <p id="passmsg">{passwordmsg}</p>
                 </div>
                 <button>Submit</button>
             </form>
