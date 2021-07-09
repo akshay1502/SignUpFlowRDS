@@ -9,7 +9,7 @@ const Signup = () => {
             email.style.border = `2px solid green`;
             setMsg('');
         } else {
-            email.style.border = ``;
+            email.style.border = `2px solid red`;
             setMsg('Please enter a valid email!');
         }
     };
