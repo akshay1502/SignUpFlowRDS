@@ -15,5 +15,5 @@ test('show otp input fields', () => {
 test('submit OTP', () => {
     render(<Otpscreen />);
     const submit = screen.getByTestId('submitotp');
-    expect(submit).toHaveBeenCalled(1);
+    fireEvent.click(submit);
 })
