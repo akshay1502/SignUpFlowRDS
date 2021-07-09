@@ -1,8 +1,11 @@
 import Singup from './signup';
-
+import Otpscreen from './otpscreen';
 function App() {
   return (
-    <Singup />    
+    <div>
+      <Singup />   
+      <Otpscreen /> 
+    </div>
   );
 }
 
