@@ -29,6 +29,7 @@ const Signup = () => {
         }
         console.log(password, repassword);
     }
+
     return ( 
         <div>
             <form>
@@ -39,15 +40,15 @@ const Signup = () => {
                 </div>
                 <div className="inputfields">
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" name="password" required/>
+                    <input type="password" data-testid="Password" id="password" name="password" required/>
                     <p>password strength</p>
                 </div>
                 <div className="inputfields">
                     <label htmlFor="repassword">Re-enter Password</label>
-                    <input type="password" id="repassword" name="repassword" required onChange={passwordcheck}/>
-                    <p id="passmsg">{passwordmsg}</p>
+                    <input type="password" data-testid="rePassword" id="repassword" name="repassword" required onChange={passwordcheck}/>
+                    <p id="passmsg" data-testid="msg">{passwordmsg}</p>
                 </div>
-                <button>Submit</button>
+                <button id="submit">Submit</button>
             </form>
         </div>
     );

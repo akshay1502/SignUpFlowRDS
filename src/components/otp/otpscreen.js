@@ -14,14 +14,12 @@ const Otpscreen = () => {
                         maxLength="1" 
                         onChange={checkinput} 
                         data-testid="number1"
-                        // eslint-disable-next-line jsx-a11y/aria-role
-                        role="input"
                         required />
-                    <input type="text" role="input" name="number" maxLength="1" onChange={checkinput} required />
-                    <input type="text" role="input" name="number" maxLength="1" onChange={checkinput} required />
-                    <input type="text" role="input" name="number" maxLength="1" onChange={checkinput} required />
-                    <input type="text" role="input" name="number" maxLength="1" onChange={checkinput} required />
-                    <input type="text" role="input" name="number" maxLength="1" onChange={checkinput} required />
+                    <input type="text" name="number" maxLength="1" onChange={checkinput} required/>
+                    <input type="text" name="number" maxLength="1" onChange={checkinput} required />
+                    <input type="text" name="number" maxLength="1" onChange={checkinput} required />
+                    <input type="text" name="number" maxLength="1" onChange={checkinput} required />
+                    <input type="text" name="number" maxLength="1" onChange={checkinput} required />
                 </div>
             </form>
             <button data-testid="submitotp">Submit</button>

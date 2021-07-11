@@ -1,5 +1,5 @@
-import Singup from './signup';
-import Otpscreen from './otpscreen';
+import Singup from './components/signup/signup';
+import Otpscreen from './components/otp/otpscreen';
 function App() {
   return (
     <div>
