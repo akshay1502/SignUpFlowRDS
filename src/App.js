@@ -1,11 +1,11 @@
-import Singup from './signup';
-import Otpscreen from './otpscreen';
-import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
+import Singup from './components/signup/signup';
+import Otpscreen from './components/otp/otpscreen';
+import { BrowserRouter,Switch,Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Switch>
           <Route exact path='/otp'>
             <Otpscreen /> 
@@ -14,7 +14,7 @@ function App() {
             <Singup />   
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/aria-role */
 const Otpscreen = () => {
     const checkinput = (e) => {
         console.log(e.target.value);
