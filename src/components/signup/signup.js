@@ -50,10 +50,6 @@ const Signup = () => {
                     <p id="passmsg" data-testid="msg">{passwordmsg}</p>
                 </div>
                 <button className="submit"><Link to='/otp'>Submit</Link></button>
-<<<<<<< HEAD
-                <button id="submit">Submit</button>
-=======
->>>>>>> bd72a507fd8b6ea491e7b5ee9dae4ecead030ca4
             </form>
         </div>
     );
