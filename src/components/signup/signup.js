@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
     const [ msg, setMsg] = useState('');
@@ -32,7 +33,7 @@ const Signup = () => {
 
     return ( 
         <div>
-            <form>
+            <form method="post">
                 <div className="inputfields">
                     <label htmlFor="email">Email</label>
                     <input type="email" placeholder="type your mail here..." id="email" name="email" onBlur={validateEmail} required/>
@@ -48,7 +49,11 @@ const Signup = () => {
                     <input type="password" data-testid="rePassword" id="repassword" name="repassword" required onChange={passwordcheck}/>
                     <p id="passmsg" data-testid="msg">{passwordmsg}</p>
                 </div>
+<<<<<<< HEAD:src/signup.js
+                <button className="submit"><Link to='/otp'>Submit</Link></button>
+=======
                 <button id="submit">Submit</button>
+>>>>>>> 875aa6427e9bc208f5472ebfec96263a4d479b03:src/components/signup/signup.js
             </form>
         </div>
     );

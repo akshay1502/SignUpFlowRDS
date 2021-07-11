@@ -21,24 +21,20 @@ input[type="password"]{
   width:40%;
 }
 
-/* #number{
-  padding-left: 15px;
-  letter-spacing: 42px;
-  border: 0;
-  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
-  background-position: bottom;
-  background-size: 50px 1px;
-  background-repeat: repeat-x;
-  background-position-x: 35px;
-  width: 220px;
-  min-width: 220px;
-} */
 .otpinput{
   display:flex;
+  margin: 1.5rem 0;
+  justify-content: center;
 }
 
 .otpinput input[type='text']{
   width:5%;
   margin-right:3%;
   text-align: center;
+}
+
+.submit a{
+  text-decoration: none;
+  color:darkgreen;
+  padding: 3px;
 }
