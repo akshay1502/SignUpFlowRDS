@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-// import Referral from './referral.js';
 
 describe.skip("check referral component", () => {
+
     test("input for referral", () => {
         // eslint-disable-next-line react/jsx-no-undef
         render(<Referral />);

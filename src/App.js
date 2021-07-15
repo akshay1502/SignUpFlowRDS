@@ -1,20 +1,19 @@
-import Singup from './components/signup/signup';
+import Signup from './components/signup/signup';
 import Otpscreen from './components/otp/otpscreen';
-import { BrowserRouter,Switch,Route } from "react-router-dom";
+import Referral from './components/referral/referral';
+// import { BrowserRouter,Switch,Route } from "react-router-dom";
+import {
+  Router
+} from '@reach/router'
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/otp'>
-            <Otpscreen /> 
-          </Route>
-          <Route path='/'>
-            <Singup />   
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <Router>
+        <Otpscreen exact path="/otp" /> 
+        <Referral exact path="/referral" />
+        <Signup path="/" /> 
+      </Router>
     </div>
   );
 }

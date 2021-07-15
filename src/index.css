@@ -21,6 +21,13 @@ input[type="password"]{
   width:40%;
 }
 
+.centercontent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .otpinput{
   display:flex;
   margin: 1.5rem 0;
